@@ -19,7 +19,7 @@ export class PHubService {
       mapData = { ...this.mappingData(content) };
 
       //Obtenemos la mejor solución
-      bestSolution = { ...this.getBestSolution(mapData, 20) };
+      bestSolution = { ...this.getBestSolution(mapData, 1000) };
     });
 
     return { message: "Transacción Existosa", data: bestSolution };
